@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Nav from "./Components/Nav/Nav";
-import Titulo from "./Components/Titulo/Titulo"
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 import CartWdiget from './Components/CartWidget/CartWidget';
 
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Titulo></Titulo>
+        <ItemListContainer></ItemListContainer>
         <Nav></Nav> <CartWdiget></CartWdiget>
       </header>
       
