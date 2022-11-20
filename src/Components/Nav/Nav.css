@@ -1,0 +1,11 @@
+.navigation {
+    text-decoration: none;
+    list-style: none;
+    color: blue;
+    background-color: #000000;
+    color: #FEF3F3;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    margin: center;
+}
