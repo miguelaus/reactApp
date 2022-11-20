@@ -1,16 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 import Nav from "./Components/Nav/Nav";
-import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 import CartWdiget from './Components/CartWidget/CartWidget';
+import Saludo from "./Components/Saludo/Saludo"
+
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ItemListContainer></ItemListContainer>
-        <Nav></Nav> <CartWdiget></CartWdiget>
+        <ItemListContainer />
+        
+        <Nav /> 
+        
+        <CartWdiget />
+
+        <Saludo persona="Tutor" apellido="1"/>
+        <Saludo persona="Tutor" apellido="2"/>
+
+     
       </header>
       
       
