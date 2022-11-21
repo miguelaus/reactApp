@@ -3,7 +3,7 @@ function ItemListContainer(props) {
     const {} = props;
 
     return (
-        <h1 className="alert alert-info">Fede Bistro Bar</h1>
+        <h1 className="alert alert-info">{props.greeting}</h1>
         
     )
 }
