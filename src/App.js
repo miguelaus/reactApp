@@ -1,7 +1,6 @@
 import './App.css';
 import Nav from "./Components/Nav/Nav";
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
-import CartWdiget from './Components/CartWidget/CartWidget';
 import Saludo from "./Components/Saludo/Saludo"
 
 

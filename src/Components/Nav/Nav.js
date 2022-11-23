@@ -1,5 +1,4 @@
 import "./Nav.css";
-import carrito from './carrito.png';
 import CartWidget from "../CartWidget/CartWidget"
 
 function Nav() {
