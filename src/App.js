@@ -1,7 +1,7 @@
 import './App.css';
 import Nav from "./Components/Nav/Nav";
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
-import Saludo from "./Components/Saludo/Saludo"
+import ItemList from './Components/ItemList/ItemList';
 
 
 
@@ -12,12 +12,13 @@ function App() {
         <ItemListContainer greeting="Bienvenidos a Fede Bistro bar" />
         
         <Nav /> 
+
+        <ItemList />
+
         
-       
+        
 
-        <Saludo persona="Tutor" apellido="1"/>
-        <Saludo persona="Tutor" apellido="2"/>
-
+   
      
       </header>
       

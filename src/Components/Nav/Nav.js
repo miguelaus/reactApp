@@ -8,13 +8,13 @@ function Nav() {
             
                                 <ul className="nav nav-pills mb-3 d-flex" id="pills-tab" role="tablist">
                                     <li className="nav-item mx-2" >
-                                        <a className="nav-link active" className="btn btn-outline-primary" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Plato</a>
+                                        <a className="nav-link btn btn-outline-primary" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Plato</a>
                                     </li>
                                     <li className="nav-item mx-2">
-                                         <a className="nav-link" className="btn btn-outline-danger"id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Postre</a>
+                                         <a className="nav-link btn btn-outline-danger"id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Postre</a>
                                     </li>
                                     <li className="nav-item mx-2">
-                                         <a className="nav-link" className="btn btn-outline-info"id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Bebida</a>
+                                         <a className="nav-link btn btn-outline-info"id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Bebida</a>
                                     </li>
                                 </ul>
 
