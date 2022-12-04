@@ -8,7 +8,7 @@ function Nav() {
 
     return (
         
-        <nav className="navigation my-2 d-flex">
+        <nav className="navigation my-2 d-flex mx-5">
             
             
                                 <ul className="nav nav-pills mb-3 d-flex" id="pills-tab" role="tablist">
