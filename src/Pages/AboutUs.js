@@ -6,7 +6,7 @@ function AboutUs()  {
         <div className="aboutUs__container" area="content">
             <div className="title"> 
                 <h2> Sobre nosotros</h2>
-                <p> blalblalblablalblablakdbj asdlksaasdkldsa </p>
+                <p> Empresa dedicada a la comercializaciòn de alimentos </p>
                 <Link>  </Link>
             </div>
         <Outlet />

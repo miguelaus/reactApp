@@ -6,7 +6,7 @@ export default function Layout(props) {
   const { children } = props;
 
   return (
-    <div className="layout__container d-flex xr-5">
+    <div className="layout__container xr-5">
       <Nav pages={PAGES} />
       {children}
       
