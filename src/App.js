@@ -4,6 +4,10 @@ import Nav from "./Components/Nav/Nav";
 import Title from "./Components/Title/Title";
 import ItemList from './Components/ItemList/ItemList';
 import Layout from "./Components/Layout/Layout";
+import Home from "./Pages/Home";
+import AboutUs from "./Pages/AboutUs";
+import Contact from "./Pages/Contact";
+import NotFound from "./Pages/NotFound";
 //import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 
 
@@ -13,11 +17,14 @@ function App() {
       <Title greeting="Bienvenidos a Fede Bistro Bar" />
         <Layout>
 
-            <Routes>      
-                   
+            <Routes>    
 
-
-              <Route caseSensitive path="ItemList"> <ItemList />  </Route>
+              <Route caseSensitive path="/" element={<Home/>} />   
+              <Route caseSensitive path="/Home" element={<Home/>} />
+              <Route caseSensitive path="/AboutUs" element={<AboutUs/>} />
+              <Route caseSensitive path="/Contact" element={<Contact/>} />  
+              <Route caseSensitive path="/ItemList" element={<ItemList/>}  />
+              <Route caseSensitive path="*" element={<NotFound/>} />
                   
                 
             </Routes>
