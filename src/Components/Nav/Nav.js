@@ -1,14 +1,16 @@
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
+import CartWidget from "../CartWidget/CartWidget";
 
 export default function Nav(props) {
   const { pages } = props;
+  
 
   return (
-    <nav className="navbar side-bar">
-      <ul className="sidebar__list-items">
+    <nav className="navbar navbar-expand-lg navbar-light bg-black d-flex">
+      <ul className="space-evenly navbar-nav me-auto mb-2 mb-lg-0">
         {pages.map((page) => (
-          <li key={`${page.id}-page`}>
+          <li className="mx-5" key={`${page.id}-page`}>
             <NavLink
               to={page.id}
               className={({ isActive }) =>
@@ -20,6 +22,9 @@ export default function Nav(props) {
           </li>
         ))}
       </ul>
+      <CartWidget />
     </nav>
   );
+  
 }
+
