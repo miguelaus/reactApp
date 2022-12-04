@@ -1,10 +1,15 @@
 import "./Nav.css";
 import CartWidget from "../CartWidget/CartWidget"
+import {Routes, Route, Link} from  "react-router-dom";
+import ItemList from "../ItemList/ItemList";
 
 function Nav() {
+
+
     return (
         
         <nav className="navigation my-2 d-flex">
+            
             
                                 <ul className="nav nav-pills mb-3 d-flex" id="pills-tab" role="tablist">
                                     <li className="nav-item mx-2" >

@@ -95,15 +95,15 @@ export default function ProductList() {
 
   
     return (
-      <div className="product-list__container d-flex mt-5 height">
-        <div className="text-black card mt-3 " >
+      <div className="product-list__container d-flex mt-5">
+        <div className="text-black card mt-3 bg-black " >
           
           {products.map((product) => (
-            <div className="card body">
+            <div className="card body mt-3 bg-black border border-primary">
               <div className ="my-3" key={product.id}>
-              <h5 className="card-title">{product.name} </h5>  Price: {product.price}
+              <h2 className="card-title text-white">{product.name} </h2> <p className="text-white"> Precio: {product.price} </p>
               <button id="agregarBtn${prod.id}" className="btn btn-primary">Agregar al Carrito</button>
-              <img src={product.img} alt="Producto"></img>
+              <img src={product.img} className="card-img-top mb-2 mt-2" alt="Producto"></img>
               </div>
             </div>
           ))}
