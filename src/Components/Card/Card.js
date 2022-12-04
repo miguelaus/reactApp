@@ -1,21 +1,11 @@
 import React from "react";
 import Margarita from `../Images/margarita.jpg`
+import "./Card.css";
 
-function Card() {
-    return (
-        <div classNname="card">
-            <img src={Margarita} alt="Pizza Margarita"></img>
-            <div className="card-body">
-                <h4 className="card-title"> Titulo</h4>
-                     <p className="card-text text-secondary">
-                         Descripcion del producto    
-                     </p>
+function Card(props) {
+  const { children } = props;
 
-            </div>
-
-        </div>
-    )
+  return <div className="card__container">{children}</div>;
 }
 
-
-export default Card
+export default Card;

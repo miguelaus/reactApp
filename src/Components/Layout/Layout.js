@@ -1,18 +1,16 @@
-import { Children } from "react";
 import Nav from "../Nav/Nav";
-import { PAGES } from "../../Utils/main-pages"
+import { PAGES } from "../../Utils/main-pages";
+import "./Layout.css";
 
+export default function Layout(props) {
+  const { children } = props;
 
-export default function Layout (props) {
-    const {Children} = props;
-    
-    return (
-        
-        <div className="layout__container bg-black">
-            <Nav pages={ PAGES } />
-            {Children}
-        </div>
-
-
-    )
+  return (
+    <div className="layout__container">
+      <Nav pages={PAGES} />
+      {children}
+      
+    </div>
+  );
 }
+
