@@ -29,16 +29,14 @@ function App() {
                   <Route caseSensitive path="/Contact" element={<Contact/>} />  
                   <Route caseSensitive path="/ItemList" element={<ItemList/>}  />
 
-                  <Route path='/' element={ <ItemListContainer saludo={saludo} greeting='hello' />}/>
-                  <Route path='/categoria/:categoriaId' element={ <ItemListContainer saludo={saludo} greeting='hello' />}/>
+                  <Route path='/' element={ <ItemListContainer saludo={saludo} greeting='Saludo1' />}/>
+                  <Route path='/categoria/:categoriaId' element={ <ItemListContainer saludo={saludo} greeting='Saludo2' />}/>
                   <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
                   <Route caseSensitive path="*" element={<NotFound/>} />
                       
                     
                 </Routes>
                 
-
-              
 
             </Layout>
           
