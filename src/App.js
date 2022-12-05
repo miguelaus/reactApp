@@ -3,12 +3,14 @@ import './App.css';
 import Title from "./Components/Title/Title";
 import ItemList from './Components/ItemList/ItemList';
 import Layout from "./Components/Layout/Layout";
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
+import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer"
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
 import NotFound from "./Pages/NotFound";
 //import Users from "./Components/Users/Users";
-//import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
+
 
 
 function App() {
@@ -26,6 +28,10 @@ function App() {
                   <Route caseSensitive path="/AboutUs" element={<AboutUs/>} />
                   <Route caseSensitive path="/Contact" element={<Contact/>} />  
                   <Route caseSensitive path="/ItemList" element={<ItemList/>}  />
+
+                  <Route path='/' element={ <ItemListContainer saludo={saludo} greeting='hello' />}/>
+                  <Route path='/categoria/:categoriaId' element={ <ItemListContainer saludo={saludo} greeting='hello' />}/>
+                  <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
                   <Route caseSensitive path="*" element={<NotFound/>} />
                       
                     
