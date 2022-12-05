@@ -1,5 +1,4 @@
 import React from "react";
-import Margarita from `../Images/margarita.jpg`
 import "./Card.css";
 
 function Card(props) {

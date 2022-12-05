@@ -95,8 +95,8 @@ export default function ProductList() {
 
   
     return (
-      <div className="product-list__container d-flex mt-5">
-        <div className="text-black card mt-3 bg-black " >
+      <div className="product-list__container d-flex">
+        <div className="text-black card mt-3 bg-black" >
           
           {products.map((product) => (
             <div className="card body mt-3 bg-black border border-primary">
