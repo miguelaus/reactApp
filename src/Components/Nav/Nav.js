@@ -12,7 +12,7 @@ export default function Nav(props) {
         {pages.map((page) => (
           <li className="mx-5" key={`${page.id}-page`}>
             <NavLink
-              to={page.id}
+              to={page.path}
               className={({ isActive }) =>
                 isActive ? "link is-active" : "link"
               }
@@ -27,4 +27,3 @@ export default function Nav(props) {
   );
   
 }
-

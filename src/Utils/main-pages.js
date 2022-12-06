@@ -19,4 +19,20 @@ export const PAGES = [
      path: "/products",
      name: "Products",
     },
+    {
+      id: "postres",
+      path: "/categoria/Postre",
+      name: "Postres",
+     },
+     {
+      id: "bebidas",
+      path: "/categoria/Bebida",
+      name: "Bebidas",
+     },
+     {
+      id: "plato",
+      path: "/categoria/Plato",
+      name: "Platos principales",
+     },
   ];
+  

@@ -4,22 +4,18 @@ import { getProducts } from "../../Data/Products";
 import { getProductsByCategory } from "../../Data/Products";
 import ItemList from "../ItemList/ItemList";
 
-
-const ItemListContainer = (props) => { 
-
-    const {} = props;
-
+const ItemListContainer = () => { 
     const [products, setProducts] = useState([])
 
-    const {id} = useParams(); 
+    const {categoriaId} = useParams(); 
 
     useEffect(() => {
-                if (id) {
-                  setTimeout(() => {
-                    getProductsByCategory(id).then((products) => {
+                if (categoriaId) {
+                 
+                    getProductsByCategory(categoriaId).then((products) => {
                         setProducts(products);
                     });
-                  }, 2000);
+                  
                 }
         else {
         
@@ -27,7 +23,7 @@ const ItemListContainer = (props) => {
                     setProducts(products);
                   });
                 }
-              }, [id])
+              }, [categoriaId])
 
      console.log(products)
 
@@ -36,7 +32,7 @@ const ItemListContainer = (props) => {
 
             <div className="products__Container">
                   
-                <ItemList data={products} />
+                <ItemList products={products} />
 
             </div>
     
