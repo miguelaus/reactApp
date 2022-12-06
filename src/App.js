@@ -18,15 +18,13 @@ function App() {
   return (
     <div className="App bg-black alert alert-info white-link">
       <Title greeting="Bienvenidos a Fede Bistro Bar" />
-            <Layout>
-            </Layout>
-                <Routes>        
+        <Layout />
+        <Routes>        
 
-                      <Route path='/' element={ <ItemListContainer  />}/>
-                      <Route path='/categoria/:categoriaId' element={ <ItemListContainer  />}/>
-                      <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
-               </Routes>
-
+           <Route path='/' element={ <ItemListContainer  />}/>
+           <Route path='/categoria/:categoriaId' element={ <ItemListContainer  />}/>
+           <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
+        </Routes>
     </div>
   );
 }
