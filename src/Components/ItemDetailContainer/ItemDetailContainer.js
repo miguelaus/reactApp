@@ -90,10 +90,7 @@ export default function ItemDetailContainer() {
 
     ];
 
-    const {id} = useParams()
-    const {categoriaId} = useParams()
 
-    
     return (
       <div className="product-list__container d-flex">
         <div className="text-black card mt-3 bg-black" >
