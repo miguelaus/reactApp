@@ -3,8 +3,6 @@ import './ItemList.css';
 
 export default function ItemList({products}) {
     
- 
-  
     return (
       <div className="product-list__container d-flex">
         <div className="text-black card mt-3 bg-black" >

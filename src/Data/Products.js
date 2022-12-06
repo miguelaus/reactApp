@@ -115,7 +115,7 @@ export const getProducts = () => {
 
 export const getProductsByCategory = (category) => {
     return new Promise((res) => {
-  // vamos a crear una constante que va a tener de valor un filtro donde buscamos la coincidencia de categorías
+  
         const productos = products.filter(product => product.type === category);
         setTimeout(() => {
             res(productos);

@@ -4,7 +4,7 @@ import Title from "./Components/Title/Title";
 //import ItemList from './Components/ItemList/ItemList';
 import Layout from "./Components/Layout/Layout";
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
-import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer"
+//import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer"
 //import Home from "./Pages/Home";
 //import AboutUs from "./Pages/AboutUs";
 //import Contact from "./Pages/Contact";
@@ -23,7 +23,6 @@ function App() {
 
            <Route path='/' element={ <ItemListContainer  />}/>
            <Route path='/categoria/:categoriaId' element={ <ItemListContainer  />}/>
-           <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
         </Routes>
     </div>
   );

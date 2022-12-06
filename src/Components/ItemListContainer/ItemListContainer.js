@@ -5,9 +5,6 @@ import { getProductsByCategory } from "../../Data/Products";
 import ItemList from "../ItemList/ItemList";
 
 
-
-
-
 const ItemListContainer = (props) => { 
 
     const {} = props;
