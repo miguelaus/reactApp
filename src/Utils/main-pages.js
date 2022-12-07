@@ -17,7 +17,7 @@ export const PAGES = [
     {
      id: "products",
      path: "/products",
-     name: "Products",
+     name: "Productos",
     },
     {
       id: "postres",
