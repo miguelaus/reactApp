@@ -15,11 +15,6 @@ export const PAGES = [
       name: "Contact",
     },
     {
-     id: "products",
-     path: "/products",
-     name: "Productos",
-    },
-    {
       id: "postres",
       path: "/categoria/Postre",
       name: "Postres",

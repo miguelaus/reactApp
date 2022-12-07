@@ -5,9 +5,10 @@ import Title from "./Components/Title/Title";
 import Layout from "./Components/Layout/Layout";
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 //import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer"
-//import Home from "./Pages/Home";
-//import AboutUs from "./Pages/AboutUs";
-//import Contact from "./Pages/Contact";
+import Home from "./Pages/Home";
+import AboutUs from "./Pages/AboutUs";
+import Contact from "./Pages/Contact";
+import Logo from "./Components/Logo/Logo"
 //import NotFound from "./Pages/NotFound";
 //import Users from "./Components/Users/Users";
 
@@ -17,10 +18,16 @@ import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 function App() {
   return (
     <div className="App bg-black alert alert-info white-link">
+     
       <Title greeting="Bienvenidos a Fede Bistro Bar" />
+      
         <Layout />
-        <Routes>        
 
+        <Routes>
+           <Route path="/home" element={ <Home />} />
+           <Route path="/home" element={<Logo />} />
+           <Route path='/aboutUs' element={ <AboutUs   />}/>
+           <Route path='/contact' element={ <Contact />}/>     
            <Route path='/' element={ <ItemListContainer  />}/>
            <Route path='/categoria/:categoriaId' element={ <ItemListContainer  />}/>
         </Routes>

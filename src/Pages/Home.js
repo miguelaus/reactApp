@@ -1,4 +1,4 @@
-import {NavLink, Link, Outlet} from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import ItemList from "../Components/ItemList/ItemList";
 
 
@@ -8,9 +8,9 @@ function AboutUs() {
                 <div className="title"> 
                     <h2> Disfruta de nuestro productos</h2>
                       <p> Portal dedicado a la venta online de Productos Alimenticios. </p>
-                    <Link></Link>
+                    
                 </div>
-                <ItemList />
+                
             <Outlet />
 
         </div>

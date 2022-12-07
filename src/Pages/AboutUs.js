@@ -1,4 +1,4 @@
-import {NavLink, Link, Outlet} from "react-router-dom";
+
 import "./AboutUs.css";
 
 function AboutUs()  {
@@ -7,9 +7,9 @@ function AboutUs()  {
             <div className="title"> 
                 <h2> Sobre nosotros</h2>
                 <p> Empresa dedicada a la comercializaciòn de alimentos </p>
-                <Link>  </Link>
+               
             </div>
-        <Outlet />
+      
 
         </div>
     )

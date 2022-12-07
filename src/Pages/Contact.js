@@ -6,9 +6,9 @@ function ContactUs() {
                 <div className="title"> 
                     <h2> Contactanos!</h2>
                        <p> Contactanos a: FedeBistroBar@Fedebistro.com </p>
-                    <Link> </Link>
+                    
                 </div>
-            <Outlet />
+            
         </div>
     )
 }
