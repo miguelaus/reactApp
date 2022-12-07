@@ -1,23 +1,44 @@
-//import Images from "../Images/Images"
+import { useParams } from "react-router-dom"
+import { useState, useEffect } from "react";
+import { getProducts } from "../../Data/Products";
+import { getProductsByCategory } from "../../Data/Products";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
+const ItemDetailContainer = () => { 
+    const [products, setProducts] = useState([])
 
-// export default function ItemDetailContainer() {
+    const {categoriaId} = useParams(); 
 
-//     return (
-//       <div className="product-list__container d-flex">
-//         <div className="text-black card mt-3 bg-black" >
-          
-//           {products.map((product) => (
-//             <div className="card body mt-3 bg-black border border-primary">
-//               <div className ="my-3" key={product.id}>
-//               <h2 className="card-title text-white">{product.name} </h2> <p className="text-white"> Precio: {product.price} </p>
-              
-//               <button id="agregarBtn${prod.id}" className="btn btn-primary">Agregar al Carrito</button>
-//               <img src={product.img} className="card-img-top mb-2 mt-2" alt="Producto"></img>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     );
-//   }
+    useEffect(() => {
+                if (categoriaId) {
+                 
+                    getProductsByCategory(categoriaId).then((products) => {
+                        setProducts(products);
+                    });
+                  
+                }
+        else {
+        
+                  getProducts().then((products) => {
+                    setProducts(products);
+                  });
+                }
+              }, [categoriaId])
+
+     console.log(products)
+
+    return ( 
+       <div>
+
+            <div className="">
+                  
+                <ItemDetail products={products} />
+
+            </div>
+    
+
+       </div>
+    )
+}  
+
+export default ItemDetailContainer
