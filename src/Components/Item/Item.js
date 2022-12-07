@@ -8,8 +8,8 @@ function Item({product}) {
                 </div>
             <div className="card-detail">
                 <h3>{product.name}</h3>
-                 <span>{product.type}</span>
-                 <p>$ {product.price}</p>
+                    <span>{product.type}</span>
+                    <p>$ {product.price}</p>
                 </div>
             </div>
       </div>

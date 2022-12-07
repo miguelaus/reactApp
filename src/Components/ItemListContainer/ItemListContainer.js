@@ -30,7 +30,7 @@ const ItemListContainer = () => {
     return ( 
        <div>
 
-            <div className="products__Container">
+            <div className="">
                   
                 <ItemList products={products} />
 

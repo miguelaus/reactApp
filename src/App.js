@@ -1,4 +1,4 @@
-import {Routes, Route, Link} from  "react-router-dom";
+import {Routes, Route} from  "react-router-dom";
 import './App.css';
 import Title from "./Components/Title/Title";
 //import ItemList from './Components/ItemList/ItemList';
@@ -8,7 +8,6 @@ import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
-import Logo from "./Components/Logo/Logo"
 //import NotFound from "./Pages/NotFound";
 //import Users from "./Components/Users/Users";
 
@@ -25,7 +24,7 @@ function App() {
 
         <Routes>
            <Route path="/home" element={ <Home />} />
-           <Route path="/home" element={<Logo />} />
+      
            <Route path='/aboutUs' element={ <AboutUs   />}/>
            <Route path='/contact' element={ <Contact />}/>     
            <Route path='/' element={ <ItemListContainer  />}/>
