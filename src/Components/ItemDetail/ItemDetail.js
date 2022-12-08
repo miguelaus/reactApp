@@ -16,14 +16,6 @@ function ItemDetail() {
 }
 
 
-export const getProduct = () => {
-    return new Promise((res, rej) => {
-        setTimeout(() => {
-            res(Product);
-            
-        }, 2000);
-    });
-};
 
 
 

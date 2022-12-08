@@ -1,7 +1,5 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react";
-import { getProduct } from "../ItemDetail/ItemDetail";
-import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => { 
     const [products, setProducts] = useState([])
@@ -26,18 +24,19 @@ const ItemDetailContainer = () => {
 
      console.log(products)
 
-    return ( 
-       <div>
+     
 
-            <div className="">
-                  
-                <ItemDetail products={products} />
 
-            </div>
-    
-
-       </div>
-    )
 }  
+
+export const getProduct = () => {
+  return new Promise((res, rej) => {
+      setTimeout(() => {
+          res(Product);
+          
+      }, 2000);
+  });
+};
+
 
 export default ItemDetailContainer
