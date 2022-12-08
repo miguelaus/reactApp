@@ -1,29 +1,28 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react";
-import { getProducts } from "../../Data/Products";
-import { getProductsByCategory } from "../../Data/Products";
+import { getProduct } from "../ItemDetail/ItemDetail";
 import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => { 
     const [products, setProducts] = useState([])
 
-    const {categoriaId} = useParams(); 
+    const {itemId} = useParams(); 
 
     useEffect(() => {
-                if (categoriaId) {
+                if (itemId) {
                  
-                    getProductsByCategory(categoriaId).then((products) => {
+                    getProduct(itemId).then((products) => {
                         setProducts(products);
                     });
                   
                 }
         else {
         
-                  getProducts().then((products) => {
+                  getProduct().then((products) => {
                     setProducts(products);
                   });
                 }
-              }, [categoriaId])
+              }, [itemId])
 
      console.log(products)
 

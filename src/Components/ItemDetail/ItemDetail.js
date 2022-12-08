@@ -1,10 +1,10 @@
 import React from "react"
 import {useParams} from "react-router-dom"
-import Products from "../../Data/products"
+import Product from "../../Data/products"
 
 function ItemDetail() {
     const {itemId} = useParams()
-    const thisProduct = Products.find(prod => prod.id === itemId)
+    const thisProduct = Product.find(prod => prod.id === itemId)
     
     return (
         <div>
@@ -14,5 +14,17 @@ function ItemDetail() {
         </div>
     )
 }
+
+
+export const getProduct = () => {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            res(Product);
+            
+        }, 2000);
+    });
+};
+
+
 
 export default ItemDetail
