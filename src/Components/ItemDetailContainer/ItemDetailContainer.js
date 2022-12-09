@@ -40,3 +40,13 @@ export const getProduct = () => {
 
 
 export default ItemDetailContainer
+
+return new Promise((res) => {
+  
+  const productos = productos.find(product => product.type === itemId);
+  setTimeout(() => {
+      res(productos);
+  }, 2000);
+});
+
+
