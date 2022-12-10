@@ -111,8 +111,6 @@ export const getProducts = () => {
         }, 2000);
     });
 };
-
-
 export const getProductsByCategory = (category) => {
     return new Promise((res) => {
   
@@ -122,3 +120,10 @@ export const getProductsByCategory = (category) => {
         }, 2000);
     });
 }
+export const getProduct = (id) => {
+  return new Promise((res) => {
+      setTimeout(() => {
+          res(products.find((item)=> item.id === parseInt(id)))
+      }, 2000);
+  })
+};

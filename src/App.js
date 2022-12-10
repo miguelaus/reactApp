@@ -23,8 +23,7 @@ function App() {
         <Layout />
 
         <Routes>
-           <Route path="/home" element={ <Home />} />
-      
+           <Route path="/home" element={ <Home />} />      
            <Route path='/aboutUs' element={ <AboutUs   />}/>
            <Route path='/contact' element={ <Contact />}/>     
            <Route path='/' element={ <ItemListContainer  />}/>
