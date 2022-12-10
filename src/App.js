@@ -12,8 +12,6 @@ import Contact from "./Pages/Contact";
 //import Users from "./Components/Users/Users";
 
 
-
-
 function App() {
   return (
     <div className="App bg-black alert alert-info white-link">
