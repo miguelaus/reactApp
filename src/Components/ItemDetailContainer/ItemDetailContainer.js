@@ -1,5 +1,6 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => { 
     const [products, setProducts] = useState([])
@@ -7,46 +8,33 @@ const ItemDetailContainer = () => {
     const {itemId} = useParams(); 
 
     useEffect(() => {
-                if (itemId) {
-                 
-                    getProduct(itemId).then((products) => {
-                        setProducts(products);
+                               
+                    getProduct().then((products) => {
+                        setProducts(products.find(product => product.type === itemId));  
                     });
+
+                    
                   
-                }
-        else {
-        
-                  getProduct().then((products) => {
-                    setProducts(products);
-                  });
-                }
-              }, [itemId])
+                });
 
-     console.log(products)
 
-     
-
+   return   <ItemDetail products={products} />;
 
 }  
 
 export const getProduct = () => {
   return new Promise((res, rej) => {
       setTimeout(() => {
-          res(Product);
+          res(products);
           
       }, 2000);
-  });
+      rej("error");
+  }, []);
 };
 
 
 export default ItemDetailContainer
 
-return new Promise((res) => {
-  
-  const productos = productos.find(product => product.type === itemId);
-  setTimeout(() => {
-      res(productos);
-  }, 2000);
-});
+
 
 
