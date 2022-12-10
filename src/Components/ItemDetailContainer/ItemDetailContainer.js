@@ -18,7 +18,9 @@ const ItemDetailContainer = () => {
                 });
 
 
-   return   <ItemDetail products={products} />;
+   return  (
+     <ItemDetail products={products} />
+   );
 
 }  
 
