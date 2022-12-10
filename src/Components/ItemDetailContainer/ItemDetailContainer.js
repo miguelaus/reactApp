@@ -1,16 +1,17 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import Product from "../../Data/products"
 
 const ItemDetailContainer = () => { 
-    const [products, setProducts] = useState([])
+    const [product, setProduct] = useState([])
 
     const {itemId} = useParams(); 
 
     useEffect(() => {
                                
-                    getProduct().then((products) => {
-                        setProducts(products.find(product => product.type === itemId));  
+                    getProduct().then((product) => {
+                        setProduct(product.find(product => product.id === itemId));  
                     });
 
                     
@@ -19,7 +20,7 @@ const ItemDetailContainer = () => {
 
 
    return  (
-     <ItemDetail products={products} />
+     <ItemDetail product={product} />
    );
 
 }  
@@ -27,7 +28,7 @@ const ItemDetailContainer = () => {
 export const getProduct = () => {
   return new Promise((res, rej) => {
       setTimeout(() => {
-          res(products);
+          res(product);
           
       }, 2000);
       rej("error");
