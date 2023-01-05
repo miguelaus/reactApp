@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { CartWidget } from "../CartWidget/CartWidget";
+// import { CartWidget } from "../CartWidget/CartWidget";
 import "./ItemCount.css";
 
 const ItemCount = () => {
@@ -23,11 +23,7 @@ const ItemCount = () => {
       <button key={count >= 1} onClick={increase}>
          +
       </button>
-      <div>
-        <button>
-          <CartWidget />
-        </button>
-      </div>
+      
     </div>
   );
 };

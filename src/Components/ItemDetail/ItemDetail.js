@@ -25,6 +25,7 @@ function ItemDetail({product}) {
               ? <Link to='/cartWidget'>Finalizar Compra</Link>
               : <ItemCount initial={3} stock={5} onAdd={onAdd}/>
             }
+              <button onClick={()=> onAdd(count)}>Agregar al carrito</button>
         </div>
     )
 }
