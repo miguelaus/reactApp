@@ -6,7 +6,8 @@ const products = [
       name: "Pizza Caprese",
       price: 300,
       img: Images.caprese,
-      type: "Plato"
+      type: "Plato",
+      amount: 0,
       
     },
     {
@@ -14,7 +15,8 @@ const products = [
       name: "Pizza Margarita",
       price: 450,
       img: Images.margarita,
-      type: "Plato"
+      type: "Plato",
+      amount: 0,
     },
     {
       id: 3,
@@ -29,7 +31,8 @@ const products = [
       name: "Pizza Cancha",
       price: 350,
       img: Images.cancha,
-      type: "Plato"
+      type: "Plato",
+      amount: 0
       
       
     },
@@ -38,7 +41,8 @@ const products = [
       name: "Cerveza pinta",
       price: 350,
       img: Images.pinta,
-      type: "Bebida"
+      type: "Bebida",
+      amount: 0
 
 
       
@@ -48,7 +52,8 @@ const products = [
       name: "Cerveza Botella",
       price: 350,
       img: Images.botellaC,
-      type: "Bebida"
+      type: "Bebida",
+      amount: 0
       
     },
     {
@@ -56,7 +61,9 @@ const products = [
       name: "Vino Copa",
       price: 350,
       img: Images.copa,
-      type: "Bebida"
+      type: "Bebida",
+      amount: 0
+    
       
     },
     {
@@ -64,7 +71,8 @@ const products = [
       name: "Vino Botella",
       price: 350,
       img: Images.botellaV,
-      type: "Bebida"
+      type: "Bebida",
+      amount: 0,
       
     },
     {
@@ -72,7 +80,9 @@ const products = [
       name: "Flan",
       price: 350,
       img: Images.flan,
-      type: "Postre"
+      type: "Postre",
+      amount: 0
+
       
     },
     {
@@ -80,7 +90,8 @@ const products = [
       name: "Fruta",
       price: 350,
       img: Images.fruta,
-      type: "Postre"
+      type: "Postre",
+      amount: 0
       
     },
     {
@@ -88,7 +99,8 @@ const products = [
       name: "Helado",
       price: 350,
       img: Images.Helado,
-      type: "Postre"
+      type: "Postre",
+      amount: 0
       
     },
     {
@@ -96,7 +108,8 @@ const products = [
       name: "Tiramisu",
       price: 350,
       img: Images.tiramisu,
-      type: "Postre"
+      type: "Postre",
+      amount: 0
       
     },
 
