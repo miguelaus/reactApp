@@ -2,17 +2,20 @@ import React from "react"
 import ItemCount from "../ItemCount/ItemCount"
 import { Link } from "react-router-dom"
 import { useState } from "react"
+import useCartContext from "../../Context/CartContext";
+
 
 
 function ItemDetail({product}) {
 
     const [goToCart, setGoToCart] = useState(false);
 
-    const onAdd = (quantity) =>{
-    setGoToCart(true)
-    }
+    const {addProduct}  = useCartContext()
 
-    
+    const onAdd = (quantity) =>{
+        addProduct(product,quantity)
+            setGoToCart(true)
+            }
     
     return (
         <div className="card body mt-3 bg-black border border-primary">
