@@ -14,6 +14,19 @@ const CartProvider = ({ children }) => {
   const removeProduct = (id) =>
     setCart(cart.filter((product) => product.id !== id));
 
+  const getQuantity = () => {
+      let cant = 0
+      cart.forEach((e) => cant += e.amount)
+      return cant
+  };
+  const getTotal = () => {
+    let total = 0
+    cart.forEach((e) => total += (e.quantity*e.price))
+    return total        
+  };
+
+
+
   const addProduct =(item, quantity) =>{
     if(isInCart(item.id)){
       setCart (cart.map(product =>{
