@@ -25,8 +25,6 @@ const CartProvider = ({ children }) => {
     return total        
   };
 
-
-
   const addProduct =(item, quantity) =>{
     if(isInCart(item.id)){
       setCart (cart.map(product =>{
@@ -39,7 +37,7 @@ const CartProvider = ({ children }) => {
   }
   return (
     <CartContext.Provider
-      value={{ clearCart, isInCart, removeProduct, addProduct }}
+      value={{ clearCart, isInCart, removeProduct, addProduct, getQuantity, getTotal }}
     >
       {children}
     </CartContext.Provider>
