@@ -3,16 +3,24 @@ import { useState } from "react";
 // import { CartWidget } from "../CartWidget/CartWidget";
 import "./ItemCount.css";
 
-const ItemCount = () => {
+const ItemCount = ({initial, stock, onAdd}) => {
   const [count, setCount] = useState(0);
 
+
   const decrease = () => {
-    setCount(count -1 );
-  };
+    if (count > initial) {
+      setCount(count-1)
+      onAdd(count)
+    }
+  }
 
   const increase = () => {
-    setCount(count + 1);
+    if (count < stock) {
+      setCount(count + 1)  
+      onAdd(count)
+    }
   };
+  
 
 
   return (

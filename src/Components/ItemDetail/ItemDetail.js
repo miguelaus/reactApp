@@ -12,9 +12,6 @@ function ItemDetail({product}) {
 
     const {addProduct} = useContext(CartContext)
 
-    const {} = stock 
-    const {} = initial 
-    const {} = onAdd
 
     const onAdd = (quantity) =>{
         addProduct(product,quantity)
@@ -30,7 +27,7 @@ function ItemDetail({product}) {
             {
               goToCart
               ? <Link to='/cartWidget'>Finalizar Compra</Link>
-              : <ItemCount initial={1} stock={} onAdd={onAdd}/>
+              : <ItemCount initial={1} stock={products.stock} onAdd={onAdd}/>
             }
              
         </div>
