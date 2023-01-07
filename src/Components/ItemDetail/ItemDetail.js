@@ -30,7 +30,7 @@ function ItemDetail({product}) {
             {
               goToCart
               ? <Link to='/cartWidget'>Finalizar Compra</Link>
-              : <ItemCount initial={3} stock={5} onAdd={onAdd}/>
+              : <ItemCount initial={1} stock={} onAdd={onAdd}/>
             }
              
         </div>

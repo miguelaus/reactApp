@@ -7,7 +7,7 @@ const products = [
       price: 300,
       img: Images.caprese,
       type: "Plato",
-      amount: 0,
+      stock: 10,
       
     },
     {
@@ -16,14 +16,15 @@ const products = [
       price: 450,
       img: Images.margarita,
       type: "Plato",
-      amount: 0,
+      stock: 20,
     },
     {
       id: 3,
       name: "Pizza Primavera",
       price: 350,
       img: Images.primavera,
-      type: "Plato"
+      type: "Plato",
+      stock: 25,
       
     },
     {
@@ -32,7 +33,7 @@ const products = [
       price: 350,
       img: Images.cancha,
       type: "Plato",
-      amount: 0
+      stock: 24,
       
       
     },
@@ -42,7 +43,7 @@ const products = [
       price: 350,
       img: Images.pinta,
       type: "Bebida",
-      amount: 0
+      stock: 20
 
 
       
@@ -53,7 +54,7 @@ const products = [
       price: 350,
       img: Images.botellaC,
       type: "Bebida",
-      amount: 0
+      stock: 23
       
     },
     {
@@ -62,7 +63,7 @@ const products = [
       price: 350,
       img: Images.copa,
       type: "Bebida",
-      amount: 0
+      stock: 8
     
       
     },
@@ -72,7 +73,7 @@ const products = [
       price: 350,
       img: Images.botellaV,
       type: "Bebida",
-      amount: 0,
+      stock: 15,
       
     },
     {
@@ -81,7 +82,7 @@ const products = [
       price: 350,
       img: Images.flan,
       type: "Postre",
-      amount: 0
+      stock: 23
 
       
     },
@@ -91,7 +92,7 @@ const products = [
       price: 350,
       img: Images.fruta,
       type: "Postre",
-      amount: 0
+      stock: 10
       
     },
     {
@@ -100,7 +101,7 @@ const products = [
       price: 350,
       img: Images.Helado,
       type: "Postre",
-      amount: 0
+      stock: 30
       
     },
     {
@@ -109,7 +110,7 @@ const products = [
       price: 350,
       img: Images.tiramisu,
       type: "Postre",
-      amount: 0
+      stock: 30
       
     },
 
