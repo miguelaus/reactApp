@@ -14,9 +14,10 @@ function ItemDetail({product}) {
 
 
     const onAdd = (quantity) =>{
+        console.log(quantity)
         addProduct(product,quantity)
-            setGoToCart(true)
-            }
+        setGoToCart(true)
+    }
     
     return (
         <div className="card body mt-3 bg-black border border-primary">
@@ -26,8 +27,8 @@ function ItemDetail({product}) {
             <img src={product.img} className="card-img-top mb-2 mt-2" alt="Producto"></img>
             {
               goToCart
-              ? <Link to='/cartWidget'>Finalizar Compra</Link>
-              : <ItemCount initial={1} stock={products.stock} onAdd={onAdd}/>
+              ? <Link to='/cart'>Finalizar Compra</Link>
+              : <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
             }
              
         </div>

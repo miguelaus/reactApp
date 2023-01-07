@@ -7,6 +7,7 @@ import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailCont
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
+import Cart from "./Components/Cart/Cart";
 //import CartProvider from "./Context/CartContext";
 //import NotFound from "./Pages/NotFound";
 //import Users from "./Components/Users/Users";
@@ -28,6 +29,7 @@ function App() {
                   <Route path='/' element={ <ItemListContainer  />}/>
                   <Route path='/categoria/:categoriaId' element={ <ItemListContainer  />}/>
                   <Route path='/item/:itemId' element={ <ItemDetailContainer  />}/>
+                  <Route path='/cart' element={ <Cart/>}/>
                 </Routes>
 
         
