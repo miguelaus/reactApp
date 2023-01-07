@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-
+import { useContext } from 'react';
 export const CartContext = createContext();
 export const useCartContext = () => useContext (CartContext);
 
@@ -16,7 +16,7 @@ const CartProvider = ({ children }) => {
 
   const getQuantity = () => {
       let cant = 0
-      cart.forEach((e) => cant += e.amount)
+      cart.forEach((e) => cant += e.quantity)
       return cant
   };
   const getTotal = () => {

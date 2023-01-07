@@ -12,7 +12,9 @@ function ItemDetail({product}) {
 
     const {addProduct} = useContext(CartContext)
 
-    
+    const {} = stock 
+    const {} = initial 
+    const {} = onAdd
 
     const onAdd = (quantity) =>{
         addProduct(product,quantity)
