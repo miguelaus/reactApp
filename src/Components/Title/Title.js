@@ -7,7 +7,7 @@ function Title(props) {
 
     return (
 
-        <div classNamme ="d-flex">
+        <div className ="d-flex">
 
             <div>
                    <h1 className="alert alert-info mt-2 bg-black title">{props.greeting}</h1>

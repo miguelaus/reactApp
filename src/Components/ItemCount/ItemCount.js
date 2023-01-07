@@ -15,7 +15,6 @@ const ItemCount = () => {
   };
 
 
-
   return (
     <div className="counter">
       <button key={count} onClick={decrease}>
