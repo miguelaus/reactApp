@@ -8,11 +8,12 @@ function CartWdiget() {
 
 
     return (
+        <div>
         
-        <a  href="#" target="_blank" rel="noopener noreferrer" src={carrito}>
             <img src={carrito} className="carrito" alt="carrito"/>
 {getQuantity()}
-        </a>
+        
+        </div>
         
     )
 }
