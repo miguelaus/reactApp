@@ -39,7 +39,7 @@ const Cart = () => {
           );
         })
       }
-      <p className="border border-success text-white">Total a pagar: ${getTotal()}</p>
+      <p className="border border-info text-white">Total a pagar: ${getTotal()}</p>
       <button className="btn btn-light" onClick={clearCart}>Vaciar Carrito</button>
       <button className="btn btn-success my-2 mx-1">Finalizar Compra</button>
     </div>
