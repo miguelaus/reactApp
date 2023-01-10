@@ -27,7 +27,7 @@ function ItemDetail({product}) {
             <img src={product.img} className="card-img-top mb-2 mt-2" alt="Producto"></img>
             {
               goToCart
-              ? <Link to='/cart'>Finalizar Compra</Link>
+              ? <Link to='/cart' className="btn btn-success">Finalizar Compra</Link>
               : <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
             }
              
