@@ -1,19 +1,19 @@
-import { useContext } from "react";
-import Context from "../../Context/CartContext";
+import {useCartContext} from '../../Context/CartContext'
 
 const Cart = () => {
 
-  const { store } = useContext(Context);
+  const { cart} = useCartContext();
+  console.log(cart)
   return (
     <div className="counter-display__container">
       {
         
-        store.products.map((product) => {
-          const { id, product: name, type, price } = product;
+        cart.map((product) => {
+          const { id, product: name, type, price, img } = product;
 
           return (
             <span key={id} className="product-legend">
-              Producto: {name} costo: {price} $ARS. Tipo de producto: {type} {img}
+              Producto: {name} costo: {price} $ARS. Tipo de producto: {type} <img src={img} alt="producto"/>
             
             </span>
           );
