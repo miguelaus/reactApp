@@ -8,9 +8,9 @@ export default function Nav(props) {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark text-center ">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
         {pages.map((page) => (
-          <li className="mx-5" key={`${page.id}-page`}>
+          <li className="mx-5 " key={`${page.id}-page`}>
             <NavLink
               to={page.path}
               className={({ isActive }) =>

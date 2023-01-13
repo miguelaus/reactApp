@@ -11,10 +11,11 @@ function Title(props) {
 
             <div>
                    <h1 className="alert alert-info mt-2 bg-black title">{props.greeting}</h1>
+                    
             </div>
             
             <div>
-                  <Logo />
+                  <Logo to="/home" />
             </div>
         </div>
             
