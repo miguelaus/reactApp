@@ -9,11 +9,11 @@ const ItemDetailContainer = () => {
     const {itemId} = useParams(); 
 
     useEffect(()=>{
-      //le decimos nuestra base de datos y en que collecion tiene que ir
+
       const coleccionProd = collection(database, "items")
-      // hacer una referencia que me traiga el ID del useParams
+ 
       const referenciaDoc = doc(coleccionProd, itemId)
-      //traemos el documento
+     
       getDoc(referenciaDoc)
       .then((result)=>{
         setProduct({

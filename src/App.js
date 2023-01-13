@@ -8,9 +8,7 @@ import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
 import Cart from "./Components/Cart/Cart";
-//import CartProvider from "./Context/CartContext";
-//import NotFound from "./Pages/NotFound";
-//import Users from "./Components/Users/Users";
+
 
 
 function App() {
