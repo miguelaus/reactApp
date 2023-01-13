@@ -1,11 +1,8 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react";
-import { getProducts } from "../../Data/Products";
-import { getProductsByCategory } from "../../Data/Products";
 import ItemList from "../ItemList/ItemList";
 import { database } from "../../Firebase/config";
-import { doc, getDoc } from "../../Firebase/firestore"
-import { collection, getDocs, query, where } from '../../Firebase/firestore';
+import { collection, getDocs, query, where } from 'firebase/firestore'
 
 const ItemListContainer = () => { 
     const [products, setProducts] = useState([])
