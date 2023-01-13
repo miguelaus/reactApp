@@ -11,7 +11,7 @@ function CartWdiget() {
         <div>
         
             <img src={carrito} className="carrito" alt="carrito"/>
-{getQuantity()}
+<p className="text-white">{getQuantity()} </p>
             
         
         </div>

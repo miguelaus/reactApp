@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
 import Cart from "./Components/Cart/Cart";
+import Footer from "./Components/Footer/Footer";
 
 
 
@@ -31,8 +32,11 @@ function App() {
                   <Route path='/cart' element={ <Cart/>}/>
                 </Routes>
 
+              <Footer />
+
         
     </div>
+    
   );
 }
 
