@@ -14,7 +14,7 @@ export default function Nav(props) {
             <NavLink
               to={page.path}
               className={({ isActive }) =>
-                isActive ? "link is-active" : "link"
+                isActive ? "link is-active text" : "link"
               }
             >
               {page.name}

@@ -25,14 +25,17 @@ function ItemDetail({product}) {
             <h1 className="card-title text-white">{product.name}</h1>
             <p className="text-white">Price: ${product.price}</p>
             <p className="text-white">{product.type}</p>
-            <img src={product.url} className="card-img-top mb-2 mt-2" alt="Producto"></img>
+            <img src={product.url} className=" m-autocard-img-top mb-2 mt-2" alt="Producto"></img>
             {
               goToCart
-              ? <Link to='/cart' className="btn btn-success mb-2">Finalizar Compra</Link>
+              ? <Link to='/cart' className=" m-auto btn btn-success mb-2">Finalizar Compra</Link>
               : <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
             }
+            <Link to='/' className="mx-2 btn btn-primary btn-lg mb-3">Seguir comprando</Link>
              
         </div>
+        
+        
     )
 }
 

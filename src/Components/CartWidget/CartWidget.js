@@ -13,8 +13,8 @@ function CartWdiget() {
         
             <img src={carrito} className="carrito" alt="carrito"/>
             
-                <p className="text-white my-2">{getQuantity()} productos en tu carrito</p>
-                <Link to='/cart' className="btn btn-success">Finalizar Compra</Link>
+                <p className="text-white my-2">Hay {getQuantity()} productos en tu carrito</p>
+                <Link to='/cart' className="btn btn-success">Mi carrito</Link>
             
         
         </div>
