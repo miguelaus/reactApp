@@ -31,7 +31,7 @@ function ItemDetail({product}) {
               ? <Link to='/cart' className=" m-auto btn btn-success mb-2">Finalizar Compra</Link>
               : <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
             }
-            <Link to='/' className="mx-2 btn btn-primary btn-lg mb-3">Seguir comprando</Link>
+            <Link to='/' className="mx-2 btn btn-primary btn-sm mb-3">Seguir comprando</Link>
              
         </div>
         

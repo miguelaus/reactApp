@@ -11,7 +11,7 @@ const Cart = () => {
     {
       !cart.length 
       ?<div>
-        <h2>Tu carrito esta vacio!</h2>
+        <h2 className="text-white my-2">¡Tu carrito esta vacio!</h2>
         <Link to='/' className="btn btn-primary btn-lg mb-3">Ir a comprar</Link>
       </div>
       :<div className="counter-display__container clase1">
