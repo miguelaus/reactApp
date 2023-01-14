@@ -32,4 +32,6 @@ FAQ List
 *The application is completely free.*
 4. **Is it necessary to be of legal age to use it?**
 *It is not necessary to be of legal age to use or download.*
+
+
 |:--------------|:-------------:|--------------:|

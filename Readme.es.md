@@ -1,19 +1,20 @@
-### General Info
+### Información General
 ***
 - Fede Bistro Bar - es un proyecto orientado a la venta de productos alimenticios online.
 Pizzas, bebidas y postres. 
 El mismo está desarrollado a partir de JavaScript y busca optimizar la experiencia de compra de productos alimenticios haciendo uso de los recursos que el lenguaje permite (JavaScript) y las dependencias que abajo se mencionan.
 
-## Technologies
+## Teconologías
 ***
-A list of technologies used within the project:
+Lista de las tecnologías utilizadas en el proyecto:
+
 * [Create React App](https://github.com/facebook/create-react-app):18.2.0
 * [Bootstrap](https://getbootstrap.com/): 5.2.2 
 * [Firebase](https://firebase.google.com/): 9.15.0
 
-## Installation
+## Instalación
 ***
-Un poco de información sobre la instalación
+Un poco de información sobre la instalación:
 ```
 $ git clone https://github.com/miguelaus/reactApp
 $ cd ../path/to/the/file
@@ -32,4 +33,6 @@ Lista de preguntas frecuentes
 *La aplicación es completamente gratuita.*
 4. **¿Es necesario ser mayor de edad para su utilización?**
 *No es necesario ser mayor de edad para su utilización ni descarga.*
+
+
 |:--------------|:-------------:|--------------:|
