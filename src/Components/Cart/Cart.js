@@ -10,8 +10,10 @@ const Cart = () => {
 
   const showToastMessage = () => {
     toast.success('Listo ! Tu orden de compra ha sido recibida exitosamente!', {
-        position: toast.POSITION.TOP_RIGHT
-    });
+      position: toast.POSITION.TOP_CENTER
+    },5000);
+    
+    
 };
   
   return (
@@ -51,7 +53,7 @@ const Cart = () => {
       }
       <p className="border border-info text-white bg-yellow py-3">Total a pagar: ${getTotal()}</p>
       <button className="btn btn-light" onClick={clearCart}>Vaciar Carrito</button>
-      <button className="btn btn-success my-2 mx-1" onClick={showToastMessage}>Finalizar Compra</button>
+      <button className="btn btn-success my-2 mx-1" onClick={showToastMessage} >Finalizar Compra</button>
       <ToastContainer />
     </div>
     }

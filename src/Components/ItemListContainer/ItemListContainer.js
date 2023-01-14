@@ -38,7 +38,7 @@ const ItemListContainer = () => {
              
                             setProducts(productos);
                     
-                        }, 2000)
+                        }, 1000)
                     };
            
                     getData();
