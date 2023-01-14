@@ -4,6 +4,8 @@ import { Link } from "react-router-dom"
 import { useState,useContext } from 'react'
 import { CartContext } from '../../Context/CartContext'
 import './ItemDetail.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -13,11 +15,18 @@ function ItemDetail({product}) {
 
     const {addProduct} = useContext(CartContext)
 
+    const showToastMessage = () => {
+        toast.success('Tu producto se ha agregado correctamente !', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+    };
+
 
     const onAdd = (quantity) =>{
-        console.log(quantity)
+        
         addProduct(product,quantity)
         setGoToCart(true)
+        showToastMessage()
     }
     
     return (
@@ -29,10 +38,12 @@ function ItemDetail({product}) {
             {
               goToCart
               ? <Link to='/cart' className=" m-auto btn btn-success mb-2">Finalizar Compra</Link>
-              : <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
+              : <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/> 
+              
             }
+            <ToastContainer />
             <Link to='/' className="mx-2 btn btn-primary btn-sm mb-3">Seguir comprando</Link>
-             
+            
         </div>
         
         

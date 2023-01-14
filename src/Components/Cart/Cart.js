@@ -1,10 +1,18 @@
 import {useCartContext} from '../../Context/CartContext'
 import {Link} from 'react-router-dom'
 import "./Cart.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = () => {
 
   const { cart, clearCart, removeProduct, getTotal} = useCartContext();
+
+  const showToastMessage = () => {
+    toast.success('Listo ! Tu orden de compra ha sido recibida exitosamente!', {
+        position: toast.POSITION.TOP_RIGHT
+    });
+};
   
   return (
     <>
@@ -43,7 +51,8 @@ const Cart = () => {
       }
       <p className="border border-info text-white bg-yellow py-3">Total a pagar: ${getTotal()}</p>
       <button className="btn btn-light" onClick={clearCart}>Vaciar Carrito</button>
-      <button className="btn btn-success my-2 mx-1">Finalizar Compra</button>
+      <button className="btn btn-success my-2 mx-1" onClick={showToastMessage}>Finalizar Compra</button>
+      <ToastContainer />
     </div>
     }
     </>

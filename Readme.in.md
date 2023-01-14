@@ -10,6 +10,7 @@ A list of technologies used within the project:
 * [Create React App](https://github.com/facebook/create-react-app):18.2.0
 * [Bootstrap](https://getbootstrap.com/): 5.2.2
 * [Firebase](https://firebase.google.com/): 9.15.0
+* [React-toastify] (https://www.npmjs.com/package/react-toastify) 9.1.1
 
 ## Installation
 ***

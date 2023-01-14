@@ -9,7 +9,7 @@ function CartWdiget() {
 
 
     return (
-        <div className="mx-5 mt-2">
+        <div className=" mt-2 m-auto">
         
             <img src={carrito} className="carrito" alt="carrito"/>
             
